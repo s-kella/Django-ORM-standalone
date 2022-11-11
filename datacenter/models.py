@@ -22,9 +22,7 @@ class Visit(models.Model):
     leaved_at = models.DateTimeField(null=True)
 
     def get_duration(self):
-        return timezone.now() - timezone.localtime(self.entered_at) \
-            if self.leaved_at is None \
-            else self.leaved_at - self.entered_at
+        return timezone.localtime(self.leaved_at) - timezone.localtime(self.entered_at)
 
     def is_visit_long(self, minutes=60):
         return self.get_duration() > datetime.timedelta(minutes=minutes)
