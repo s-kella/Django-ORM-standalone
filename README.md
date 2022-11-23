@@ -9,6 +9,18 @@ Python3 должен быть уже установлен.
 ```
 pip install -r requirements.txt
 ```
+Создайте .env файл с содержимым
+```
+SECRET_KEY=''
+PASSWORD=''
+HOST=''
+PORT=''
+NAME=''
+USER=''
+ALLOWED_HOSTS=
+DEBUG=
+```
+и вставьте чувствительные данные и настройки сайта. 
 
 ### Пример запуска
 
