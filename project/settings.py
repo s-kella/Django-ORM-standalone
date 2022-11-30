@@ -5,16 +5,6 @@ from environs import Env
 
 env = Env()
 env.read_env()
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'HOST': env('HOST'),
-#         'PORT': env('PORT'),
-#         'NAME': env('NAME'),
-#         'USER': env('USER'),
-#         'PASSWORD': env('PASSWORD'),
-#     }
-# }
 
 DATABASES = {'default': dj_database_url.config()}
 
@@ -37,7 +27,6 @@ TEMPLATES = [
         'APP_DIRS': True,
     },
 ]
-
 
 USE_L10N = True
 
