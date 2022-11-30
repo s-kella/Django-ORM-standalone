@@ -11,19 +11,15 @@ pip install -r requirements.txt
 ```
 Создайте .env файл с содержимым
 ```
-SECRET_KEY=''
-PASSWORD=''
-HOST=''
-PORT=''
-NAME=''
-USER=''
+DATABASE_URL=
 ALLOWED_HOSTS=
 DEBUG=
+SECRET_KEY=
 ```
-и вставьте чувствительные данные и настройки сайта. 
+и вставьте чувствительные данные и настройки сайта. В DATABASE_URL вставьте url вида `postgres://USER:PASSWORD@HOST:PORT/NAME`, где `USER`, `PASSWORD`, `HOST`, `PORT`, `NAME` - ваши данные 
 
 ### Пример запуска
 
 ```
-python manage.py runserver 127.0.0.1:8000
+python manage.py runserver
 ```
