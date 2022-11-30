@@ -16,7 +16,7 @@ ALLOWED_HOSTS=
 DEBUG=
 SECRET_KEY=
 ```
-и вставьте чувствительные данные и настройки сайта. В DATABASE_URL вставьте url вида `postgres://USER:PASSWORD@HOST:PORT/NAME`, где `USER`, `PASSWORD`, `HOST`, `PORT`, `NAME` - ваши данные. Для `ALLOWED_HOSTS`, `DEBUG`, `SECRET_KEY` в файле settings.py прописаны значения по умолчанию. 
+и вставьте чувствительные данные и настройки сайта. В DATABASE_URL вставьте url вида `postgres://USER:PASSWORD@HOST:PORT/NAME`, где `USER`, `PASSWORD`, `HOST`, `PORT`, `NAME` - ваши данные. Для `ALLOWED_HOSTS`, `DEBUG`, `SECRET_KEY` в файле `settings.py` прописаны значения по умолчанию. 
 
 ### Пример запуска
 
